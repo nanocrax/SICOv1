@@ -4,6 +4,7 @@ const LocalStrategy = require ('passport-local').Strategy; //Utilizare la estrat
 const mongoose = require('mongoose');//Necesito ingresar a la base de datos
 const User = require('../models/User')//Necesito el modelo de datos
 
+
 passport.use(new LocalStrategy({ //Defino una nueva extrategia de autenticacion
     usernameField: 'email' //Defino que es lo que necesito para autenticar
 }, async (email, password, done) => {
