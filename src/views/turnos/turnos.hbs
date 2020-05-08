@@ -1,7 +1,144 @@
-<div class="mx-auto">
-    <div class="card container">
-        <h3 class="card-header text-center">TURNOS</h3>
-        <div class="car-body pt-3">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<!-- CUSTOM CSS -->
+<link rel="stylesheet" href="/css/div.css"> <!-- Utilizo un estilo propio -->
+
+<link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css" >
+
+<div class="div">
+  <div class="row">
+     {{!SECCION PRETURNOS}}
+    <div style="background-color: rgb(159, 216, 226)" class="h1 mt-2 mb-2 col-4"  >PRETURNOS
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <div class="h5">| Puesto |</div>
+          </div>
+          <div class="col text-center">
+            <div class="div h5">| Nros Emi |</div>
+          </div>
+          <div class="col text-center">
+            <div class="div h5">| Llamar a |</div>
+          </div>
         </div>
+
+        <div class="row">
+          <div class="col-1 text-center">
+            nada
+          </div>
+          <div class="col-8 text-center">
+            Combobox de Medico y Turno
+          </div>
+          <div class="col-3 text-center">
+            nada
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-1 text-center">
+            BTN NUEVO TURNO
+          </div>
+          <div class="col-8 text-center">
+            Listado de turnos
+          </div>
+          <div class="col-3 text-center">
+            Calendario
+          </div>
+        </div>
+
+      </div>
     </div>
+    
+  
+    {{!SECCION TURNOS}}
+    <div style="background-color: rgb(224, 247, 218)" class="mt-2 mb-2 pt-2 pb-2 col-8">
+      <div class="container">
+        <div class="div row">
+          <div class="h2 text-dark col">TURNOS</div>
+
+          <div class="btn-group mb-3" role="group" aria-label="">
+            <button type="button" class="btn btn-primary ">Ver Cobros</button>
+            <button type="button" class="btn btn-secondary ">Imprimir</button>
+            <button type="button" class="btn btn-secondary">Config.</button>
+          </div>
+  
+        </div>
+        <hr style="border-color:rgb(2, 81, 172);">
+        <div class="row">
+
+          <div class="col input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Fecha</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>Fecha y Hora</option>
+              <option value="1">...</option>
+            </select>
+          </div>
+          
+          <div class="col input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Médico</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>Todos</option>
+              <option value="1">Dr Zarif</option>
+              <option value="2">Dr Jure</option>
+              <option value="3">Dra Berrafato</option>
+            </select>
+          </div>
+          
+          <div class="col input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Turno</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>Ambos</option>
+              <option value="1">Mañana</option>
+              <option value="2">Tarde</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="div row mr-1 ml-1">
+          <div class="h5 col mb-0 mt-2 ">Listado de Turnos</div>
+
+          <div class="btn-group " role="group" aria-label="">
+            <button type="button" class="btn btn-success">Nuevo turno</button>
+          </div>
+        
+        </div>
+        
+        <div class="div ">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Turno 1</li>
+              <li class="list-group-item">Turno 2</li>
+              <li class="list-group-item">Turno 3</li>
+              <li class="list-group-item">Turno 4</li>
+              <li class="list-group-item">Turno 5</li>
+              <li class="list-group-item">Turno 1</li>
+              <li class="list-group-item">Turno 2</li>
+              <li class="list-group-item">Turno 3</li>
+              <li class="list-group-item">Turno 4</li>
+              <li class="list-group-item">Turno 5</li>
+              <li class="list-group-item">Turno 1</li>
+              <li class="list-group-item">Turno 2</li>
+              <li class="list-group-item">Turno 3</li>
+              <li class="list-group-item">Turno 4</li>
+              <li class="list-group-item">Turno 5</li>
+              <li class="list-group-item">Turno 1</li>
+              <li class="list-group-item">Turno 2</li>
+              <li class="list-group-item">Turno 3</li>
+              <li class="list-group-item">Turno 4</li>
+              <li class="list-group-item">Turno 5</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+
+
+
+

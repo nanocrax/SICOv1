@@ -9,7 +9,7 @@ const  TurnoSchema = new Schema ({// Defino que propiedades tendre en las turnos
     medico1: {type: String}, //Medico principal
     medico2: {type: String}, //Medico secundario
     tipo_atencion: {type: String},  //Identifica si es consulta o algun estudio
-    estado: {type: String}, //Diferencia el estado del turno (Reservado-Efectivo)
+    estado: {type: String}, //Diferencia el estado del turno (Reservado-En espera-Atendido-Vencido)
     fyh_llegada: {type: Date}, //Fecha y hora en que el paciente es atendido por la recepcionista
     fyh_atencion: {type: Date}, //Fecha y hora en que el paciente es atendido por el doctor
     borrado: {type: Boolean}, //Identifica si el turno esta borrado
